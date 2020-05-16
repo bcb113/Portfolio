@@ -1,0 +1,189 @@
+/* Linked HTML Document: index.html */
+
+body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif;}
+
+html, body {
+  margin:0;
+  padding:0;
+  width:100%;
+	
+  height: 100%;
+}
+
+/*
+ *  Custom Scrollbar
+ */
+
+::-webkit-scrollbar
+{
+	width: 10px;
+	background-color: #F5F5F5;
+}
+
+::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	background-color: #F5F5F5;
+}
+
+::-webkit-scrollbar-thumb
+{
+	background-color: black;
+	border: 2px solid black;
+}
+
+::-webkit-scrollbar-thumb:hover {
+	background: white;
+}
+
+/*
+ *  IDs
+ */
+ 
+#arrow {
+   background-image: url("../images/arrows_down.png");
+   height: 50px;
+   width: 55px;
+}
+#arrow:hover {
+   background-image: url("../images/arrows_down_hover.png");
+}
+
+/*
+ *  Custom Classes
+ */
+
+.center {
+  margin: auto;
+  width: 100%;
+  /* border: 3px solid black; */
+  padding: 10px;
+}
+.center-horizontal {
+	line-height: 600px;
+	margin: auto;
+	width: 100%;
+	padding-bottom: 80px;
+	text-align: center;
+}
+.center-horizontal h1 {
+  line-height: 1.5;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.gray-bg {
+	background-color: #F2F2F2;
+	text-align: center;
+	padding-top: 100px;
+	padding-bottom: 60px;
+}
+.gray-bg p{
+	color: black;
+	font-size: 24px;
+	text-align: left;
+}
+
+.black-bg {
+	background-color: black;
+	text-align: center;
+	padding-top: 60px;
+	padding-bottom: 900px;
+}
+
+/*====================| Nav |==============================*/
+
+.page__header {
+  position: sticky;
+  top: 0;
+  background: black;
+  z-index: 1;
+}
+
+.page__title {
+  margin: 0;
+  font-size: 22px;
+  color: white;
+}
+
+/*===========================================================*/
+
+.pulse:hover, 
+.pulse:focus {
+  animation: pulse 1s;
+  box-shadow: 0 0 0 2em rgba(#fff,0);
+}
+
+@keyframes pulse {
+  0% { box-shadow: 0 0 0 0 var(--hover); }
+}
+
+.raise:hover,
+.raise:focus {
+  box-shadow: 0 0.5em 0.5em -0.4em var(--hover);
+  transform: translateY(-0.25em);
+}
+
+button {
+  background: none;
+  border: 2px solid;
+  font: inherit;
+  line-height: 1;
+  margin: 0.5em;
+  padding: 1em 2em;
+}
+
+.button:hover {
+  background: black;
+}
+
+.btn-txt {
+	color: black;
+}
+.btn-txt:hover {
+	color: white;
+}
+
+.btn-white{
+  color: white;
+  background: none;
+  border: 2px solid;
+  font: inherit;
+  line-height: 1;
+  margin: 0.5em;
+  padding: 1em 2em;
+}
+
+/*================================================================*/
+
+.footer {
+	padding-top: 20px;
+	padding-bottom: 15px;
+	background-color: black;
+}
+.footer p {
+	color: white; 
+	font-size: 18px; 
+	padding-top: 15px;
+	font-family: courier;
+}
+
+.about-bg{
+	background-image: url("../img/PortfolioSite-page-1.jpg");
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position:center;
+	background-size:cover;
+	text-align: center;
+}
+.project-bg{
+	background-image: url("../img/PortfolioSite-page-2.jpg");
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position:center;
+	background-size:cover;
+	text-align: center;
+}
+.contact-bg{
+	background-image: url(img/);
+}
